@@ -23,7 +23,7 @@ const TodoItem = ({ todo, onUpdate }: Props) => {
   };
 
   return (
-    <li className="flex justify-between items-center p-2 bg-gray-100 rounded">
+    <li className="flex justify-between items-center p-2 bg-gray-100 rounded text-black">
       {editMode ? (
         <input
           type="text"

@@ -34,7 +34,7 @@ const AIGeneratedTodos = ({ onAdd }: Props) => {
         type="text"
         value={input}
         onChange={(e) => setInput(e.target.value)}
-        className="p-2 border rounded w-full"
+        className="p-2 border rounded w-full text-black"
         placeholder="Enter a task idea..."
       />
       <button onClick={handleGenerate} className="mt-2 p-2 bg-blue-500 text-white rounded">
@@ -43,7 +43,7 @@ const AIGeneratedTodos = ({ onAdd }: Props) => {
 
       <ul className="mt-4 space-y-2">
         {suggestions.map((todo, index) => (
-          <li key={index} className="p-2 bg-white rounded shadow flex justify-between">
+          <li key={index} className="p-2 bg-white rounded shadow flex justify-between text-black">
             {todo}
             <button onClick={() => handleAdd({newTodo: todo})} className="text-blue-500">
               Add
