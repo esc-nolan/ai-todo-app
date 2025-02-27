@@ -1,6 +1,5 @@
 import { useState } from "react";
 import { addTodo } from "../services/todo";
-import AIGeneratedTodos from "./aitodos";
 
 interface Props {
   onAdd: () => void;
